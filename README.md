@@ -1,16 +1,16 @@
 # Twitter dashboard
 
-Illustrates a scalable multi-threaded architecture for implementing a Twitter  reporting platform.
+Illustrates a scalable multi-threaded architecture for implementing a Twitter reporting platform.
 
  * `TPL DataFlow` pipeline to download, deserialize, and aggregate Tweets.
 
 * Thread safe cache with configurable eviction strategy to prevent out-of-memory conditions.
 
-* Push notifications to clients via `SignalR`
+* Push notifications to clients via `SignalR`.
 
-* API server can run standalone or as a Windows service
+* API server can run standalone or as a Windows service.
 
-* Simple Angular client dashboard
+* Simple Angular client dashboard.
 
 * SOLID design with testable components.
 

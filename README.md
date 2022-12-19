@@ -49,7 +49,7 @@ Deserializes a Tweet object from json.
 Provides thread safe access to the Tweet counter and Cache.  Generates snapshots for the dashboard.
 
 ### `TwitterClient`
-Reader that listens to Twitter http stream.  Signals Tweet receipt via a Reactive `Observable`
+Reader that listens to Twitter http stream.  Signals Tweet receipt via a Reactive `Observable`.
 
 ### `Cache`
 [LeaderAnalytics Cache](https://github.com/leaderanalytics/Caching) is well suited for high speed multi-threaded applications such as this one.  In this application the `TimeSinceGet` eviction strategy is used to purge hashtags that have not been referenced in the last two hours. [Nuget package available here](https://www.nuget.org/packages/LeaderAnalytics.Caching#versions-body-tab).

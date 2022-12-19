@@ -1,0 +1,11 @@
+global using NUnit.Framework;
+global using Autofac;
+global using Dashboard.Model;
+global using System.Net.Http;
+global using System.Text.Json;
+global using System.Text.Json.Nodes;
+global using Dashboard.Components;
+global using Dashboard.Domain;
+global using Dashboard.Model;
+global using Moq;
+global using Microsoft.AspNetCore.SignalR;

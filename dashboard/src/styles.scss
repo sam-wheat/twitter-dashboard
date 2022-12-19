@@ -1,0 +1,252 @@
+@use '@angular/material' as mat;
+@include mat.core();
+$primary-dark: mat.define-palette(mat.$blue-palette, 300);
+$accent-dark: mat.define-palette(mat.$blue-palette, 700);
+$warn-dark: mat.define-palette(mat.$red-palette);
+$theme-dark: mat.define-dark-theme((
+  color:(
+    primary:$primary-dark, 
+    accent: $accent-dark, 
+    warn: $warn-dark
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+ ));
+@include mat.core-theme($theme-dark);
+
+// hide bg on dialogs
+.app-dialog .mat-dialog-container {
+    overflow: hidden;
+  }
+
+  /* MATERIAL CLASSES */
+  /* input color class */
+input.mat-input-element {
+    color: white!important;
+}
+.mat-form-field {
+  color: white!important;
+}
+  /* Change label color on focused */
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: #50d0fb !important;
+  }
+  
+  /* underline border color on focused */
+.mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: #50d0fb !important;
+  }
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .mat-autocomplete-panel.mat-autocomplete-visible {
+    background-color: rgb(66, 66, 66) !important;
+    color: white;
+  }
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    min-width:160px !important;
+  } 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(66, 66, 66);
+  }
+    
+.rightAlign {
+    text-align: right;
+}
+
+.listRow {
+    line-height: 30px;
+}
+h2 {
+    font-family: sans-serif;
+}
+p { color: white; }
+// wait cursor class
+.wait *{
+  cursor: wait !important; 
+} 
+a {
+  color: rgb(255, 255, 255);
+}  
+
+// paginator and paginator icons
+.mat-select-value {
+  font-size: 10px;
+}
+.mat-paginator-icon {
+  height: 15px;
+  width: 15px;
+  font-size: 15px;
+  line-height: 15px;
+}
+.mat-paginator-range-label .mat-paginator-page-size-label .mat-option-text {
+  font-size: 10px;
+}
+
+// expansion panel
+.mat-expansion-panel-spacing {
+  margin: 0px!important;
+}
+.mat-expansion-panel-body {
+  padding: 2px 5px 2px 5px!important;
+}
+// tabs
+.mat-tab-label {
+  height: 23px!important;
+}
+.exception-tab-detail-box {
+  width: 99%;
+  height: 90%;
+  overflow: auto;
+}
+// list tables
+table.mat-table {
+  width: 100%;
+ // background-color: rgb(88, 88, 88);
+  tr.mat-header-row {
+    background-color: rgb(77, 77, 77);
+    font-size: x-small;  
+    height: 18px;
+  }
+  tr.mat-row {
+      font-size: x-small;  
+      height: 18px!important;
+  }
+  tr.mat-row:hover {
+    background-color: rgb(77, 77, 77);
+  }
+  td.mat-cell {
+    font-size: x-small;
+    padding: 0px 2px 0px 2px;
+  }
+}
+
+
+$custom-typography: mat.define-typography-config(
+  $headline-1: mat.define-typography-level(32px, 48px, 700),
+  $headline-2: mat.define-typography-level(26px, 30px, 700),
+  $headline-3: mat.define-typography-level(22px, 26px, 700),
+  $headline-4: mat.define-typography-level(16px, 20px, 700),
+  $body-1: mat.define-typography-level(11px, 15px, 500),
+  $body-2: mat.define-typography-level(11px, 15px, 700),
+  $caption: mat.define-typography-level(11px, 15px, 500),
+  $button: mat.define-typography-level(11px, 15px, 500)
+);
+
+
+  /* hover popup innerHTML class */
+  .popup-details {
+    font-size: 11px;
+    color: white;
+    table.mat-tab {
+      width: 100%;
+      padding: 0px!important;
+      margin: 0px!important;
+    }
+    td.mat-cell {
+      font-size: 11px;
+      padding-top: 0px!important;
+      padding-bottom: 0px!important;
+      padding-left: 5px!important;
+      padding-right: 5px!important;
+      margin: 0px!important;
+    }
+  }
+  .error-panel-class {
+    margin: 5px;
+  }
+  .notification-panel-class {
+    margin: 5px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+  }
+.mat-card.exception-detail-card {
+  padding: 5px;
+}
+.popup-panel-class {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  background-color: rgb(66, 66, 66);
+}
+
+// autocomplete
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px rgb(66,66,66) inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+footer {
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  line-height: 20px;
+  bottom: 0px;
+  position: fixed;
+  background-color:cornflowerblue;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  color:black;
+}
+
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27,31,35,.2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+  border-color: rgba(27,31,35,.35);
+  background-position: -.5em;
+}
+
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}

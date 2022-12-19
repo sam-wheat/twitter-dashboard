@@ -30,7 +30,7 @@ Build and run the Dashboard.API project in Visual Studio.
 With the Dashboard.API running, navigate to the dashboard folder and run `ng serve` from a command line or debug from an instance of VSCode.  Open a browser on `localhost:4200`.
 
 
-![Dashboard](./capture.png)
+![Dashboard](./dashboard.png)
 
 ## Application components
 ### `DashboardManager`
